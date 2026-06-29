@@ -26,5 +26,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./wisecow-devops-assignment-/wisecow
+          file: ./wisecow-devops-assignment-/wisecow/Dockerfile
           push: true
           tags: ${{ secrets.name }}/wisecow-app:latest
